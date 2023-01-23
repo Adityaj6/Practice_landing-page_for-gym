@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE FIT </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+       body{
+        color: aliceblue;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/background.jpg');
+        background-size: 100% 112%;
+        background-repeat: no-repeat;
+        font-family: 'Rowdies', cursive;
+       }
+       .left{
+        display: inline-block;
+          /* border: 2px solid blue; */
+          position: absolute;
+          left: 60px;
+          top: 20px;
+       }
+       .left img{
+        width: 95px;
+        border-radius: 32px;
+       }
+       .left div{
+        text-align: center;
+        line-height: 17px;
+        font-size: 20px;
+       }
+       .center{
+            display:block;
+            width: 37%;
+            margin: 29px auto;
+            /* border: 2px solid purple; */
+       }
+       .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 43px;
+         /* border: 2px solid violet; */
+       }
+       .navbar{
+        display: inline-block;
+       }
+       .navbar li{
+        display: inline-block;
+        font-size: 15px;
+       }
+    .navbar li a{
+        color: aliceblue;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: aqua;
+    }
+    .btn{
+        margin: 0px 9px;
+        color: rgb(80, 211, 237);
+        background-color: rgb(79, 20, 90);
+        padding: 7px 11px;
+        border: 3px solid cyan;
+        border-radius: 10px;
+        cursor: pointer;
+        font-family: 'Rowdies', cursive;
+
+    }
+    .btn:hover{
+        color: blue;
+         background-color: rgb(223, 174, 147);
+    }
+    .container{
+        border: 2px solid white;
+        margin: 120px 88px;
+        padding: 46px 71px ;
+        width: 34%;
+        border-radius: 4px;
+    }
+    .form-group input{
+       
+        text-align: center;
+        display: block;
+        width: 244px;
+        padding: 6px 51px;
+        border: 2px solid black;
+        margin: 7px auto;
+        font-size: 24px;
+        border-radius: 6px;
+        font-family: inherit;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 33%;
+        margin: 20px auto;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+         <img src="img/fitness.png" alt="">
+         <div>LIFE FIT</div>
+        </div>
+        <!-- center box for navbar -->
+        <div class="center">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+         <button class="btn">Call us </button>
+         <button class="btn">BOOK</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Bareilly</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <label for="myName">Name : </label>
+                <input type="text" name="" id="myName" placeholder="enter your name">
+                <label for="myAge">Age : </label>
+                <input type="text" name="" id="myAge" placeholder="enter your Age">
+                <label for="myGender">Gender : </label>
+                <input type="text" name="" id="myGender" placeholder="enter your Gender">
+                <label for="myNumber">Phone Number : </label>
+                <input type="text" name="" id="myNumber" placeholder="Enter Phone Number">
+                <label for="email">Email : </label>
+                <input type="email" name="" id="email" placeholder="Email">
+                <label for="mySomething">Goal : </label>
+                <input type="text" name="" id="mySomething" placeholder="Fitness Goal">
+              
+            </div>
+            <button class="btn">Submits</button>
+        </form>
+    </div>
+</body>
+</html>
